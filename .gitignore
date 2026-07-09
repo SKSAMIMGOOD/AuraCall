@@ -1,0 +1,46 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate.log
+
+# IntelliJ Related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code Related
+.vscode/
+
+# Flutter/Dart Related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Android Related
+*.apk
+*.ap_
+*.aab
+*.dex
+**/raw/
+**/google-services.json
+.gradle/
+local.properties
+project.properties
+
+# iOS/macOS Related
+**/Pods/
+**/DerivedData/
+Runner.xcodeproj/project.xcworkspace/
+Runner.xcodeproj/xcuserdata/
