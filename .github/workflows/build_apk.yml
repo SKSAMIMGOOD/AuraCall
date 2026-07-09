@@ -31,14 +31,29 @@ jobs:
           channel: 'stable'
           cache: true
 
+      # Back up our custom code so flutter create doesn't overwrite it
+      - name: Backup Custom Source Code
+        run: |
+          mkdir -p ../backup
+          cp -r lib ../backup/
+          cp pubspec.yaml ../backup/
+
+      # Generate the native Android wrapper files
+      - name: Generate Android Platform Wrapper
+        run: |
+          flutter create --platforms=android --org com.sksamimgood --project-name aura_call .
+
+      # Restore our custom code, replacing the default template files
+      - name: Restore Custom Source Code
+        run: |
+          rm -rf lib
+          cp -r ../backup/lib .
+          cp ../backup/pubspec.yaml .
+
       - name: Get dependencies
         run: flutter pub get
 
       - name: Build APK (Release)
-        run: flutter build apk --release
-
-      - name: Upload Release APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: AuraCall-Release-APK
-          path: build/app/outputs/flutter-apk/app-release.apk
+        run: |
+          # Run build using Gradle toolchain
+          flutter build apk --release
