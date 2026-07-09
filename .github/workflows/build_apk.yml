@@ -54,6 +54,11 @@ jobs:
         run: flutter pub get
 
       - name: Build APK (Release)
-        run: |
-          # Run build using Gradle toolchain
-          flutter build apk --release
+        run: flutter build apk --release
+
+      # Upload the compiled APK so you can download it
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: AuraCall-Release-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
