@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/models/contact_model.dart';
+import '../../../core/models/call_log_model.dart';
 import '../../../core/widgets/glass_widgets.dart';
 
 class AiDashboardScreen extends ConsumerStatefulWidget {
@@ -250,7 +251,7 @@ class _AiDashboardScreenState extends ConsumerState<AiDashboardScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Icon(Icons.g_shield_outlined, color: AppColors.blue, size: 24),
+                          const Icon(Icons.security, color: AppColors.blue, size: 24),
                           const SizedBox(height: 12),
                           const Text('Trust Rating Index', style: TextStyle(color: Colors.white38, fontSize: 11)),
                           const SizedBox(height: 4),

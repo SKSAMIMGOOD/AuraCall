@@ -283,7 +283,7 @@ class _IncomingCallScreenState extends ConsumerState<IncomingCallScreen> with Si
                           const SizedBox(height: 6),
                           Text(
                             callState.spamReason,
-                            style: const TextStyle(color: Colors.white80, fontSize: 13),
+                            style: const TextStyle(color: Colors.white70, fontSize: 13),
                             textAlign: TextAlign.center,
                           ),
                         ],

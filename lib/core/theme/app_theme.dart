@@ -47,7 +47,7 @@ class AppTheme {
           labelLarge: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.glassSurface,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(28.0),
@@ -55,7 +55,7 @@ class AppTheme {
         ),
         elevation: 0,
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor: Colors.black.withOpacity(0.85),
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -93,11 +93,11 @@ class AppTheme {
           titleLarge: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
           titleMedium: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.black54),
           bodyLarge: const TextStyle(fontSize: 16, fontWeight: FontWeight.normal, color: Colors.black),
-          bodyMedium: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black80),
+          bodyMedium: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
           labelLarge: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black),
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: const Color(0x0D000000),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(28.0),

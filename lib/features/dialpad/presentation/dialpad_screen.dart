@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/glass_widgets.dart';
+import '../../../core/models/contact_model.dart';
 import '../../contacts/presentation/contact_details_screen.dart';
 
 class DialPadScreen extends ConsumerStatefulWidget {
